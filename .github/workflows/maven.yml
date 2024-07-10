@@ -15,4 +15,4 @@ jobs:
         uses: browser-actions/setup-firefox@v1.5.1 
 
       - name: Test
-        run: ./mvnw test
+        run: ./mvnw test "-Dusername=${{secrets.USERNAME}}" "-Dpassword=${{secrets.PASSWORD}}"
